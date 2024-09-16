@@ -1,0 +1,23 @@
+table.tabla-alta {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 2rem auto;
+    box-shadow: 1px 1px 5px 3px var(--sombra-caja);
+ 
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        border-radius: 0px;
+        text-align: center;
+        display: table-cell;
+    }
+}
+#elim-comprar{
+  display: flex;
+  justify-content: space-around;
+}
+#elim-comprar button{
+  width: 7rem;
+}

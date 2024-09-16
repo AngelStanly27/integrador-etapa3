@@ -1,0 +1,45 @@
+footer{ 
+   
+    padding: 3rem;
+    text-align: center;
+    @media (max-width: 768px){
+        padding: 3rem .5rem;
+    }
+}
+.food{
+    // width: 62rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+
+    &__logo{
+        text-align: center;
+        border-radius: 8px;
+        @media (max-width: 768px){
+            width: 11rem;
+        }
+    }
+
+    &__avisos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+    &__inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+
+    }
+    
+    &__nota{
+        width: 12rem;
+        text-align: justify;
+            @media (max-width: 768px){
+                width: 10.5rem;
+            }
+    }
+} 

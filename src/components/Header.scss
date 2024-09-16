@@ -1,0 +1,303 @@
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        & { /* .main-header */
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+}
+
+
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+}
+
+//     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+//         background-color: yellow;
+//     }
+
+// }
+
+
+// /* -------------------------------------------------------- */
+// /* NAVBAR */
+// /* -------------------------------------------------------- */
+
+.nav-bar {
+   padding-top: 1rem;
+//    height: 2rem;
+
+    &__nav-list { /* .nav-bar__nav-list */
+        // position: relative;
+        display: flex;
+        list-style-type: none;
+        justify-content: right;
+        
+        padding-right: 5rem;
+
+        
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item {
+        text-align: center;
+        border-left: 2rem solid transparent;
+        
+        
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: var(--azul-claro); 
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px 1px var(--azul-oscuro);
+        
+    }
+
+    @media (max-width: 768px) {
+        & { /* .nav-bar */
+            display: none;
+        }
+    }
+}
+
+// /* -------------------------------------------------------- */
+// /* SEARCH BAR */
+// /* -------------------------------------------------------- */
+
+.search-bar {
+    // background-color: olivedrab;
+    display: flex; 
+    justify-content: center;
+    padding-top: 1rem;
+
+    &__logo-container { /* .search-bar__logo-container */
+        position: absolute;
+        top: 3rem; left: 0;
+        @media (max-width: 768px){
+            position: relative;
+            top: 0; left: 0;
+        }
+        
+    }
+    &__logo{
+        width: 95%;
+
+        @media (max-width: 768px){
+            width: 100%;
+
+        }
+    }
+
+    &__form-container {
+    //    padding-bottom: 0.5rem;
+       padding-top: 2rem;
+       padding-right: 1.5rem;
+
+       width: 38rem;
+       
+      
+
+    //    background-color: gold;
+       display: flex;
+       justify-content: space-between;
+       @media (max-width: 768px){
+        justify-content: flex-start;
+       }
+    }
+
+    &__form-label {
+        // background-color: greenyellow;
+        
+    }
+
+    &__form-search {
+        // background-color: deeppink;
+        width: 67%;
+        border-radius: 8px; 
+        // border-right: 2rem solid transparent;
+        @media (max-width: 768px){
+            width: 45%;
+        }
+       
+    
+    }
+
+    &__form-submit {
+        // background-color: #EAE6E3;
+        // border-left: 1rem solid transparent;
+        // border-right: 1rem solid transparent;
+        // border-top: 0.05rem solid transparent;
+        // border-bottom: 0.05rem solid transparent;
+        
+            display: none;
+        
+        
+    }
+    
+    &__carrito-container {
+        height: 2.6rem;
+        padding-top: 2.2rem;
+        padding-left: .5rem;
+        padding-right: 1rem;
+        cursor: pointer;
+
+        text-align: center;
+        @media (max-width: 768px){
+            position: relative;
+            right: 2rem;
+        }
+        
+        i{ 
+        font-size: 2.2rem;
+        }
+        button{
+            display: none;
+        }
+        .nav-car{
+            display: none;
+
+            // li{
+            //     list-style: none;
+            //     padding: 0.9rem;
+            //     font-weight: bold;
+            // }
+        }
+        i:hover > .buy-car{
+            width: 20rem;
+            height: 17rem;
+            position: absolute;
+            right: 7.5rem;
+            top: 5.2rem;
+            background-color: var(--portada-claro);
+            border-radius: 10px;
+            transition: 2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+           
+            @media (max-width: 768px){
+                display: block;
+                right: -5rem;
+            }
+        }
+        i:hover .nav-car{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+         }
+         
+        i:hover .btn-card{
+            display: block;
+            width: 65%;
+            padding: 1rem;
+            margin: 0.7rem auto;
+            box-shadow: 2px 2px 5px 1px var(--letras-body);
+            border-radius: 8px;
+            background-color: var(--portada-claro);
+            cursor: pointer;
+        }
+//--------------------------------------------------------------
+        
+    }
+}
+
+.input-svg{
+    position: relative;
+    // width:rem
+}
+.input-icon {
+    color: var(--letras-body);
+    position: absolute;
+    width: 3rem;
+    height: 2.5rem;
+    left: 1rem;
+    // top: 50%;
+    transform: translatex(-100%);
+    cursor: pointer;
+    // transform: translateY(-100%);
+    
+    @media (max-width: 768px){
+        left: 4.2rem;
+    }
+ }
+
+
+// /* -------------------------------------------------------- */
+// /* MENÚ TOOGLE */
+// /* -------------------------------------------------------- */
+
+.menu-toogle {
+    display: none;
+    // background-color: red;
+    flex: 0 0 3rem;
+    position: relative;
+    top: 1.5rem;
+    cursor: pointer;
+    
+    
+    &__label {
+        display: block;
+        background-color: var(--letras-body);
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: var(--letras-footer);
+        height: .2rem;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    &__top-bread {
+        top: .6rem;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.8rem;
+    }
+    &__bottom-bread {
+        bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        & { /* .menu-toogle */
+            display: block;
+        }
+    }
+}
+#cardNum {
+    position: relative;
+    top: -10px;
+    right: -10px;
+    background-color: var(--azul-oscuro);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid white; // Borde blanco alrededor del número
+  }

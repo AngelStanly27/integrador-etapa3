@@ -1,0 +1,18 @@
+{{#each productos}}
+    <div class="card">
+        <article class="card__article">
+            <a href="{{url}}">
+            <div class="card__image-container">
+            <img src="{{foto}}" alt="{{nombre}}" class="card__image">
+            </div></a>
+            <div class="card__content">
+            <h2 class="card__heading">{{nombre}}</h2>
+            <div class="card__description">
+                <p id="txtDescripcion">{{descripcion}}</p>
+                <p id="precioTxt">{{precio}}</p>
+            </div>
+            </div>
+        </article>
+    </div> 
+{{/each}}
+

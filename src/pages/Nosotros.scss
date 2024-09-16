@@ -1,0 +1,106 @@
+
+.portada-ds{
+    text-align: center;
+    padding-top: 2rem;
+}
+.portada-dos{
+    width: 67.8rem;
+    height: 50rem;
+        @media (max-width: 768px){
+            width: 42rem;
+            height: 30rem;
+        }
+}
+
+.historia{
+    display: flex;
+    justify-content: center;
+    height: 17rem;
+        @media (max-width: 768px){
+            height: 12rem;
+        }
+    &__year{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 35rem;
+            @media (max-width: 768px){
+                height: 12rem;
+                width: 42.3rem;
+
+            }
+    }
+    &__log-nos{
+        display: flex;
+        align-items: center;
+        width: 25rem;
+        margin: 0 6rem;
+            @media (max-width: 768px){
+                display: none;
+            }
+    }
+    
+    
+}
+logo-nos{
+    width: 28rem;
+    height: 7.5rem;
+}
+
+
+.para{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 15rem;
+        @media (max-width: 768px){
+            flex-direction: column;
+            margin: 2rem 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+    &__consumidores{
+        display: flex;
+        flex-direction: column;
+         margin-right: 3rem;
+         width: 100rem;
+            @media (max-width: 768px){
+                width: 42.3rem;
+                margin: 0;
+            }
+        }
+        &__empresas{
+         display: flex;
+         flex-direction: column;   
+         margin-left: 3rem;
+         width: 100rem;
+            @media (max-width: 768px){
+                width: 42.3rem;
+                margin: 0;
+            }
+    }
+}
+.para h3{
+    text-align: center;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    
+    border-radius: 8px;    
+    width: 17rem;
+    
+    background-color: var(--azul-oscuro);
+    box-shadow: 1px 1px 5px 2px  var(--azul-black);
+        @media (max-width: 768px){
+            margin-top: 1.7rem;
+        }
+}
+
+.para p{
+    text-align: justify;
+    margin: 0.5rem;
+}
+.txt-food{
+    text-align: center;
+    margin: 3rem 0;
+}
