@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import logo from './img/logo.png';
 import CarritoContext from '../context/CarritoContext';
 import { useNavigate } from 'react-router';
 
@@ -42,7 +41,7 @@ const SearchBar = () => {
   return (
     <div className="search-bar">
         <div className="search-bar__logo-container">
-          <img src={logo}  className="search-bar__logo input" alt="Aires Acondicionados EL Angel" />
+          <img src="/public/img/logo.png"  className="search-bar__logo input" alt="Aires Acondicionados EL Angel" />
         </div>
 
         <form action="" className="search-bar__form-container">

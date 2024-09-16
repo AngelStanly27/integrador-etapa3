@@ -17,13 +17,13 @@ const Nosotros = () => {
         Facilis quas facere, nostrum minima rerum vero asperiores temporibus dolorem quasi eveniet esse sint vitae sunt maiores explicabo magni labore molestiae obcaecati fuga repellat dolores cupiditate quod! At, modi consequatur?</p>
        </div>
        <div className="historia__log-nos">
-        <img src="logo.png" className="logo-nos" alt="aire acondicionado logo" />
+        <img src="/public/img/logo.png"  className="logo-nos" alt="aire acondicionado logo" />
        </div>
        
      </div>
     
      <div className="portada-ds">
-      <img src="/src/components/img/portada-dos.webp" className="portada-dos"  alt="portada-dos" />
+      <img src="/public/img/portada-dos.webp" className="portada-dos"  alt="portada-dos" />
     </div>
      
     <div className="para">

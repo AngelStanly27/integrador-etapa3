@@ -20,7 +20,7 @@ const Inicio = () => {
         </header>
         
         <div className="portada">
-          <img className="portada__foto" src="/src/components/img/split-dos.webp" alt="portada"/>
+          <img className="portada__foto" src="/public/img/split-dos.webp" alt="portada"/>
         </div>
 
      

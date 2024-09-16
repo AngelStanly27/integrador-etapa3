@@ -1,6 +1,5 @@
 import menuItems from '../constants/menuItems'
 import './Footer.scss'
-import logo from './img/logo.png';
 
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
     <footer>
     <nav className="food">
       <div className="food__logotipo">
-      <img src={logo} alt="aire acondicionado el angel" className="food__logo" /> 
+      <img src="/public/img/logo.png" alt="aire acondicionado el angel" className="food__logo" /> 
       </div>
      
       <div className="food__inicio">
